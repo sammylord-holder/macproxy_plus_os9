@@ -164,6 +164,7 @@ def handle_video_request(video_id):
 	try:
 		subprocess.run([
 			"ffmpeg",
+			"-n",
 			"-i", input_path,
 			"-f", "mov",
 			"-vcodec", "mjpeg",  # Motion JPEG codec (widely supported)
@@ -171,7 +172,6 @@ def handle_video_request(video_id):
 			"-vf", "scale=320:240",  # Lower resolution for better compatibility
 			"-r", "15",  # Lower frame rate
 			"-q:v", "4",  # Video quality (lower is better)
-			"-y",
 			flim_path
 		], check=True)
 	except subprocess.CalledProcessError:
