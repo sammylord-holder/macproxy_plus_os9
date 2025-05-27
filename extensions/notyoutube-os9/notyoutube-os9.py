@@ -164,14 +164,18 @@ def handle_video_request(video_id):
 	try:
 		subprocess.run([
 			"ffmpeg",
+			"-n",
 			"-i", input_path,
 			"-f", "mov",
-			"-vcodec", "mjpeg",  # Motion JPEG codec (widely supported)
-			"-acodec", "pcm_s16le",  # Uncompressed PCM audio (most compatible)
-			"-vf", "scale=320:240",  # Lower resolution for better compatibility
-			"-r", "15",  # Lower frame rate
-			"-q:v", "4",  # Video quality (lower is better)
-			"-y",
+			"-vcodec", "svq1",  # Sorenson Video codec (better Mac OS 9 compatibility)
+			"-acodec", "adpcm_ima_qt",  # ADPCM audio (better Mac OS 9 compatibility)
+			"-ar", "22050",  # Lower audio sample rate
+			"-ac", "1",  # Mono audio
+			"-vf", "scale=160:120",  # Lower resolution for Mac OS 9
+			"-r", "10",  # Lower frame rate for 56k
+			"-b:v", "100k",  # Very low bitrate for 56k
+			"-b:a", "16k",  # Low audio bitrate
+			"-q:v", "5",  # Slightly lower quality
 			flim_path
 		], check=True)
 	except subprocess.CalledProcessError:

@@ -28,5 +28,41 @@
         "creator": "a-ha",
         "description": "An 80s classic.",
         "path": "/Users/sparky/macproxy_plus/extensions/notyoutube-os9/flims/Take On Me.mp4"
+    },
+    {
+        "title": "We Built This City",
+        "creator": "Starship",
+        "description": "Another 80s classic.",
+        "path": "/Users/sparky/macproxy_plus/extensions/notyoutube-os9/flims/We Built This City.mp4"
+    },
+    {
+        "title": "I Wanna Rock",
+        "creator": "Twisted Sister",
+        "description": "Another 80s classic.",
+        "path": "/Users/sparky/macproxy_plus/extensions/notyoutube-os9/flims/I Wanna Rock.mp4"
+    },
+    {
+        "title": "We're All Gonna Make It",
+        "creator": "Randi Zuckerberg",
+        "description": "Wow. Just wow.",
+        "path": "/Users/sparky/macproxy_plus/extensions/notyoutube-os9/flims/WAGMI.mp4"
+    },
+    {
+        "title": "HODL Gang",
+        "creator": "Chris Record",
+        "description": "HODL Gang, HODL gang, HODL gang, HODL Gang.",
+        "path": "/Users/sparky/macproxy_plus/extensions/notyoutube-os9/flims/HODL Gang.mp4"
+    },
+    {
+        "title": "The Love Boat S1E6",
+        "creator": "Paramount",
+        "description": "Soon we'll be making another run.",
+        "path": "/Users/sparky/macproxy_plus/extensions/notyoutube-os9/flims/S1E6.mp4"
+    },
+    {
+        "title": "Versace Bedouin",
+        "creator": "Razzlekhan",
+        "description": "Motherfucking crocidile of wall street.",
+        "path": "/Users/sparky/macproxy_plus/extensions/notyoutube-os9/flims/Versace Bedouin.mp4"
     }
 ]

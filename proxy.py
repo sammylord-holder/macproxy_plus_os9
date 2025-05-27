@@ -299,7 +299,7 @@ if __name__ == "__main__":
 	parser.add_argument(
 		"--port",
 		type=int,
-		default=5001,
+		default=7898,
 		action="store",
 		help="Port number the web server will run on",
 	)
