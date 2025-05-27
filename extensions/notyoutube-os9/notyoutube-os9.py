@@ -169,12 +169,12 @@ def handle_video_request(video_id):
 			"-f", "mov",
 			"-vcodec", "svq1",  # Sorenson Video codec (better Mac OS 9 compatibility)
 			"-acodec", "adpcm_ima_qt",  # ADPCM audio (better Mac OS 9 compatibility)
-			"-ar", "22050",  # Lower audio sample rate
+			"-ar", "11025",  # Lower audio sample rate
 			"-ac", "1",  # Mono audio
-			"-vf", "scale=160:120",  # Lower resolution for Mac OS 9
-			"-r", "10",  # Lower frame rate for 56k
-			"-b:v", "100k",  # Very low bitrate for 56k
-			"-b:a", "16k",  # Low audio bitrate
+			"-vf", "scale=300:225",  # Lower resolution for Mac OS 9
+			"-r", "12",  # Lower frame rate for 56k
+			"-b:v", "74k",  # Very low bitrate for 56k
+			"-b:a", "4k",  # Low audio bitrate
 			"-q:v", "5",  # Slightly lower quality
 			flim_path
 		], check=True)
